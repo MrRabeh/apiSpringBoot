@@ -1,0 +1,8 @@
+FROM tomcat
+
+LABEL authors="test docker"
+
+COPY /build/libs/apiSpringBoot-1.0.war  /usr/local/tomcat/webapps/
+
+CMD ["catalina.sh", "run"]
+
